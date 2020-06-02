@@ -1,3 +1,10 @@
+/*
+  CIS 22B
+    Lab3: Simulates a BST and various functions to traverse through it
+  Author: Michael Wallerius
+  Date: 5/31/2020
+*/
+
 #include <iostream>
 #include "IntBinaryTree.h"
 

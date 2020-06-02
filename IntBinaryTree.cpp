@@ -1,8 +1,16 @@
+/*
+  CIS 22C
+    Lab3: Simulates a BST and various functions to traverse through it
+  Author: Michael Wallerius
+  Date: 5/31/2020
+*/
+
 #include "IntBinaryTree.h"
 #include <iostream>
 
 using namespace std;
 
+//This function destroys subtrees using postorder traversal. There is no return.
 void IntBinaryTree::destroySubTree(TreeNode* node)
 {
     if (node != nullptr)
@@ -13,6 +21,7 @@ void IntBinaryTree::destroySubTree(TreeNode* node)
     }
 }
 
+// Given a binary tree, this function inserts a given value into the BST. There is no return.
 void IntBinaryTree::insertNode(int value)
 {
    TreeNode *newNode = new TreeNode;
@@ -43,6 +52,7 @@ void IntBinaryTree::insertNode(int value)
    } // end of else
 } // end of function
 
+// Given a binary tree, this function searches for a given value. The return is either true or false.
 bool IntBinaryTree::searchNode(int value)
 {
    TreeNode *nodePtr = root;
@@ -59,8 +69,7 @@ bool IntBinaryTree::searchNode(int value)
    return false;
 }
 
-/* Given a binary tree, print its nodes according to the
-"bottom-up" postorder traversal. */
+// Given a binary tree, this function prints its nodes according to postorder traversal. There is no return
 void IntBinaryTree::BSTPrintPostorder(struct TreeNode* node)
 {
     if (node == nullptr)
@@ -73,7 +82,7 @@ void IntBinaryTree::BSTPrintPostorder(struct TreeNode* node)
     cout << node->value << " ";
 }
 
-/* Given a binary tree, print its nodes in inorder*/
+// Given a binary tree, this function prints its nodes according to inorder traversal. There is no return
 void IntBinaryTree::BSTPrintInorder(struct TreeNode* node)
 {
     if (node == nullptr)
@@ -86,7 +95,7 @@ void IntBinaryTree::BSTPrintInorder(struct TreeNode* node)
     BSTPrintInorder(node->right);
 }
 
-/* Given a binary tree, print its nodes in preorder*/
+// Given a binary tree, this function prints its nodes according to preorder traversal. There is no return
 void IntBinaryTree::BSTPrintPreorder(struct TreeNode* node)
 {
     if (node == nullptr)
@@ -99,16 +108,19 @@ void IntBinaryTree::BSTPrintPreorder(struct TreeNode* node)
     BSTPrintPreorder(node->right);
 }
 
+//Passes the root node to the in order function. No return
 void IntBinaryTree::BSTPrintInorder()
 {
     BSTPrintInorder(root);
 }
 
+//Passes the root node to the preorder function. No return
 void IntBinaryTree::BSTPrintPreorder()
 {
     BSTPrintPreorder(root);
 }
 
+//Passes the root node to the in postorder function. No return
 void IntBinaryTree::BSTPrintPostorder()
 {
     BSTPrintPostorder(root);

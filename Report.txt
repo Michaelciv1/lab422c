@@ -1,0 +1,33 @@
+Complexity Analysis Report
+Lab 4
+Name: Michael Wallerius
+
+IntBinaryTree(){
+Complexity: O(N)
+
+~IntBinaryTree(){
+Complexity: O(N)
+
+insertNode(int)
+Complexity: O(N)
+
+searchNode(int)
+Complexity: O(log(N))
+
+BSTPrintInorder(struct TreeNode* node)
+Complexity: O(N)
+
+BSTPrintPreorder(struct TreeNode* node)
+Complexity: O(N)
+
+BSTPrintPostorder(struct TreeNode* node)
+Complexity: O(N)
+
+BSTPrintInorder()
+Complexity: O(N)
+
+BSTPrintPostorder()
+Complexity: O(N)
+
+BSTPrintPreorder()
+Complexity: O(N)
