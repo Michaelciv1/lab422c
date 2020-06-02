@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1591073443 source:c:\users\michael-gpc\documents\code blocks work\lab 4\main.cpp
+	<iostream>
+	"IntBinaryTree.h"
+
+1591073322 source:c:\users\michael-gpc\documents\code blocks work\lab 4\intbinarytree.cpp
+	"IntBinaryTree.h"
+	<iostream>
+
+1591073355 c:\users\michael-gpc\documents\code blocks work\lab 4\intbinarytree.h
+
